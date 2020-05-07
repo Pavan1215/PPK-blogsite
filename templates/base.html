@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Base</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+          <h1>Welcome to our blog site</h1>
+          <h2>Login or register to view our blogs</h2>
+          <a href="{% url 'user_registration' %}">Register</a>
+          <a href="{% url 'login' %}">Login</a>
+          
+        </div>
+      </div>
+    <div class="container">
+    {% block body_block %}
+    {% endblock %}
+    </div>
+  </body>
+</html>
